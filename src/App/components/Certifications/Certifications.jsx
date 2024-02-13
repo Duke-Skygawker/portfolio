@@ -1,4 +1,8 @@
 const Certifications = () => {
-  return <h1>Certifications</h1>;
+  return (
+    <div className="certifications">
+      <h1>Certifications</h1>
+    </div>
+  );
 };
 export default Certifications;

@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <>
-      <h1>This the app innit</h1>
       <Navbar />
       <Hero />
       <About />

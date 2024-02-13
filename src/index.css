@@ -1,3 +1,4 @@
+@import "/src/App/App.css";
 @import "/src/App/components/Navbar/navbar.css";
 @import "/src/App/components/Hero/hero.css";
 @import "/src/App/components/About/about.css";
@@ -18,6 +19,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 
 a {
   font-weight: 500;
@@ -30,8 +40,8 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }

@@ -1,8 +1,12 @@
+import { FaGithub } from "react-icons/fa";
+
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div>
-        <h1>Navbar</h1>
+      <div className="socials">
+        <a href="https://github.com/Duke-Skygawker" className="social-link">
+          <i>{<FaGithub />}</i>
+        </a>
       </div>
       <div className="nav-links">
         <a href="#home">Home</a>

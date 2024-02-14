@@ -6,13 +6,13 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <>
+    <div className="main-container">
       <Navbar />
       <Hero />
       <About />
       <Projects />
       <Certifications />
-    </>
+    </div>
   );
 }
 

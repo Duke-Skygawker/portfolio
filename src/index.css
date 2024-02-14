@@ -6,6 +6,7 @@
 @import "/src/App/components/Certifications/certifications.css";
 
 :root {
+  box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -47,7 +48,6 @@ a:hover {
 body {
   margin: 0;
   padding: 0;
-  display: flex;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -74,17 +74,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

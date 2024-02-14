@@ -22,6 +22,10 @@
   max-width: 320px;
 }
 
+.cert-span {
+  color: aquamarine;
+}
+
 .cert-img:hover {
   animation: certZoom 1s ease 0s 1 normal forwards;
 }

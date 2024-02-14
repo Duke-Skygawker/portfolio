@@ -3,6 +3,35 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cert-grid {
+  /* border: 2px solid red; */
+  max-width: 80%;
+  margin: 2em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.cert-img {
+  max-width: 320px;
+}
+
+.cert-img:hover {
+  animation: certZoom 1s ease 0s 1 normal forwards;
+}
+
+@keyframes certZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2.4);
+  }
 }

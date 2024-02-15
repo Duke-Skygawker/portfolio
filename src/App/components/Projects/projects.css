@@ -1,8 +1,36 @@
+@import "./Project/project.css";
+
 .projects {
   /* border: 2px solid red; */
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  /* justify-content: center; */
   align-items: center;
+}
+
+.projects-container {
+  /* border: 2px solid red; */
+  margin: 5em auto 0 auto;
+  /* margin-top: 5em; */
+  max-width: 90%;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1180px) {
+  .project-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+  }
+  .projects {
+    justify-content: center;
+    align-items: center;
+  }
 }

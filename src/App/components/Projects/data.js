@@ -1,9 +1,9 @@
-import SocialMediaDash from "../../../assets/images/PORTFOLIO PROJECTS/social_media_dashboard";
-import Blackjack from "../../../assets/images/PORTFOLIO PROJECTS/blackjack";
-import DynamicPortfolio from "../../../assets/images/PORTFOLIO PROJECTS/dynamic_portfolio";
-import ShoppingCart from "../../../assets/images/PORTFOLIO PROJECTS/Shopping_cart_with_smartphones";
-import BackroadsApp from "../../../assets/images/PORTFOLIO PROJECTS/BACKROADSAPP";
-import ColorApp from "../../../assets/images/PORTFOLIO PROJECTS/COLOR_generator";
+import SocialMediaDash from "../../../assets/images/PORTFOLIO PROJECTS/social_media_dashboard.jpg";
+import Blackjack from "../../../assets/images/PORTFOLIO PROJECTS/blackjack.png";
+import DynamicPortfolio from "../../../assets/images/PORTFOLIO PROJECTS/dynamic_portfolio.png";
+import ShoppingCart from "../../../assets/images/PORTFOLIO PROJECTS/Shopping_cart_with_smartphones.png";
+import BackroadsApp from "../../../assets/images/PORTFOLIO PROJECTS/BACKROADSAPP.png";
+import ColorApp from "../../../assets/images/PORTFOLIO PROJECTS/COLOR_generator.png";
 
 const projects = [
   {
@@ -43,3 +43,5 @@ const projects = [
     url: "https://stirring-sunshine-e5f1cf.netlify.app",
   },
 ];
+
+export default projects;

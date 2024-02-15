@@ -5,6 +5,7 @@
   align-items: center;
   max-width: 480px;
   max-height: 480px;
+  text-align: center;
 }
 
 .project-card img {
@@ -14,9 +15,38 @@
   object-fit: contain;
 }
 
-@media only screen and (max-width: 768px) {
+.project-card img:hover {
+  animation: certZoom 1s ease 0s 1 normal forwards;
+}
+
+@media only screen and (max-width: 1180px) {
   .project-card {
     max-width: 360px;
     max-height: 360px;
+  }
+}
+
+@keyframes certZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.9);
+  }
+}
+@keyframes certZoomSmall {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .cert-img:hover {
+    animation: certZoomSmall 1s ease 0s 1 normal forwards;
   }
 }

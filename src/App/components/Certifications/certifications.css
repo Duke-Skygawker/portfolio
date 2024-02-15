@@ -19,7 +19,7 @@
 }
 
 .cert-img {
-  max-width: 420px;
+  max-width: 30em;
 }
 .cert-heading {
   margin-top: 3em;
@@ -39,5 +39,20 @@
 
   100% {
     transform: scale(2.4);
+  }
+}
+@keyframes certZoomSmall {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.7);
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .cert-img:hover {
+    animation: certZoomSmall 1s ease 0s 1 normal forwards;
   }
 }

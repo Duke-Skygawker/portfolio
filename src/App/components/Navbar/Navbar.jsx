@@ -10,10 +10,18 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="socials">
-        <a href="https://github.com/Duke-Skygawker" className="social-link">
+        <a
+          href="https://github.com/Duke-Skygawker"
+          className="social-link"
+          title={showLang === "ENG" ? "GitHub Account" : "Konto na GitHubie"}
+        >
           <i>{<FaGithub />}</i>
         </a>
-        <a href="https://twitter.com/Bart_K_Dev" className="social-link">
+        <a
+          href="https://twitter.com/Bart_K_Dev"
+          className="social-link"
+          title={showLang === "ENG" ? "Twitter Account" : "Konto na Twitterze"}
+        >
           <i>{<FaTwitter />}</i>
         </a>
       </div>
@@ -21,10 +29,26 @@ const Navbar = () => {
         {showLang === "ENG" ? <LinksENG /> : <LinksPL />}
         <div className="lang-buttons">
           <button onClick={() => setShowLang("PL")}>
-            <i className="country-flag">{<PL title="Polish Flag" />}</i>
+            <i className="country-flag">
+              {
+                <PL
+                  title={showLang === "ENG" ? "Polish Flag" : "Flaga Polski"}
+                />
+              }
+            </i>
           </button>
           <button onClick={() => setShowLang("ENG")}>
-            <i className="country-flag">{<GB title="Great Britain Flag" />}</i>
+            <i className="country-flag">
+              {
+                <GB
+                  title={
+                    showLang === "ENG"
+                      ? "Great Britain Flag"
+                      : "Flaga Wielkiej Brytanii"
+                  }
+                />
+              }
+            </i>
           </button>
         </div>
       </div>

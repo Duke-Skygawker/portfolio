@@ -6,6 +6,7 @@
   max-width: 480px;
   max-height: 480px;
   text-align: center;
+  padding: 0.5em;
 }
 .project-card a {
   margin: 0 auto;
@@ -18,10 +19,15 @@
   max-width: 80%;
   max-height: 360px;
   object-fit: contain;
+  padding: 0.5em;
 }
 
 .project-card img:hover {
   animation: certZoom 1s ease 0s 1 normal forwards;
+}
+
+.project-heading {
+  margin-top: 0.7em;
 }
 
 @media only screen and (max-width: 1180px) {

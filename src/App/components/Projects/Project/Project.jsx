@@ -8,7 +8,7 @@ const Project = ({ item }) => {
       <a href={url} target="_blank">
         <img src={img} alt={showLang === "ENG" ? name : namePL} />
       </a>
-      <h3>
+      <h3 className="project-heading">
         <a href={repo} target="_blank">
           {showLang === "ENG" ? name : namePL}
         </a>

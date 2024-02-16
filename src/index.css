@@ -45,7 +45,7 @@ a {
 }
 a:hover {
   color: #434343;
-  border-left: solid 2px #ddd;
+  border-top: solid 2px #434343;
 }
 
 body {

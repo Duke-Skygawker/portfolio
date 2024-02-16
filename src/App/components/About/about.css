@@ -1,8 +1,9 @@
 .about {
   /* border: 2px solid red; */
-  width: 100%;
-  height: 100vh;
+  margin-top: 5em;
+  min-width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }

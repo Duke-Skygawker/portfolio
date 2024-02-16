@@ -2,6 +2,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { useGlobalContext } from "../../../context/Context";
 import { PL, GB } from "country-flag-icons/react/3x2";
+import LinksENG from "./LinksENG";
+import LinksPL from "./LinksPL";
 
 const Navbar = () => {
   const { showLang, setShowLang } = useGlobalContext();
@@ -16,12 +18,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="nav-buttons">
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#certifications">Certifications</a>
-        </div>
+        {showLang === "ENG" ? <LinksENG /> : <LinksPL />}
         <div className="lang-buttons">
           <button onClick={() => setShowLang("PL")}>
             <i className="country-flag">{<PL title="Polish Flag" />}</i>

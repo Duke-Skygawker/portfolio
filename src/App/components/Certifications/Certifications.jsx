@@ -1,9 +1,13 @@
 import cert1 from "../../../assets/certs/freecodecamp_responsive_web_cert_censored.jpg";
+import { useGlobalContext } from "../../../context/Context";
+import CertHeadEng from "./CertHead/CertHeadEng";
+import CertHeadPL from "./CertHead/CertHeadPL";
 
 const Certifications = () => {
+  const { showLang } = useGlobalContext();
   return (
     <div className="certifications" id="certifications">
-      <h1>Certifications</h1>
+      <h1>{showLang === "ENG" ? "Certifications" : "Certyfikaty"}</h1>
       <div>
         <div className="cert-grid">
           <img
@@ -12,15 +16,7 @@ const Certifications = () => {
             className="cert-img"
           />
         </div>
-        <h4 className="cert-heading">
-          Currently working on:{" "}
-          <span className="cert-span">
-            Algorithms and Data Structures from{" "}
-            <a href="https://www.freecodecamp.org" target="_blank">
-              freeCodeCamp
-            </a>
-          </span>
-        </h4>
+        {showLang === "ENG" ? <CertHeadEng /> : <CertHeadPL />}
       </div>
     </div>
   );

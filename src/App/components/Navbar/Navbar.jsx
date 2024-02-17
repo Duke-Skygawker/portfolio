@@ -1,12 +1,21 @@
-import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 import { useGlobalContext } from "../../../context/Context";
 import { PL, GB } from "country-flag-icons/react/3x2";
 import LinksENG from "./LinksENG";
 import LinksPL from "./LinksPL";
+import { useRef } from "react";
 
 const Navbar = () => {
-  const { showLang, setShowLang } = useGlobalContext();
+  const windowSize = useRef(window.innerWidth);
+  console.log(windowSize);
+  const {
+    showLang,
+    setShowLang,
+    showNavbar,
+    setShowNavbar,
+    closeCross,
+    faBars,
+  } = useGlobalContext();
   return (
     <div className="navbar">
       <div className="socials">
@@ -25,7 +34,7 @@ const Navbar = () => {
           <i>{<FaTwitter />}</i>
         </a>
       </div>
-      <div className="nav-buttons">
+      <div className={showNavbar ? "nav-buttons" : "nav-buttons collapse"}>
         {showLang === "ENG" ? <LinksENG /> : <LinksPL />}
         <div className="lang-buttons">
           <button onClick={() => setShowLang("PL")}>
@@ -51,6 +60,9 @@ const Navbar = () => {
             </i>
           </button>
         </div>
+      </div>
+      <div className="nav-toggler">
+        <button onClick={() => setShowNavbar(!showNavbar)}>{faBars}</button>
       </div>
     </div>
   );

@@ -25,8 +25,8 @@ const projects = [
     name: "Dynamic Portfolio with Bootstrap 5 & SASS",
     namePL: "Dynamiczne Portfolio przy użyciu Bootstrap 5 oraz SASS",
     img: DynamicPortfolio,
-    repo: "https://github.com/Duke-Skygawker/Bootstrap-5-and-SASS-dynamic-portfolio",
-    url: "#NEED_TO_HOST",
+    repo: "https://github.com/Duke-Skygawker/Bootstrap-5-and-SASS-dynamic-portfolio-now-with-webpack",
+    url: "https://profound-cat-10cb10.netlify.app",
   },
   {
     name: "Shopping cart in React using a reducer",

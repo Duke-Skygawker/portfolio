@@ -20,6 +20,7 @@
   font-size: 2em;
 }
 .hero-text1 {
+  margin-top: -5em;
   width: 50%;
 }
 .hero-text2 {
@@ -60,6 +61,6 @@
   }
 
   .hero-text2 {
-    margin-top: 1em;
+    margin-top: 3em;
   }
 }

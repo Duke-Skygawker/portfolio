@@ -1,27 +1,63 @@
 import { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "../../../context/Context";
-import { PL, GB } from "country-flag-icons/react/3x2";
 import LinksENG from "./LinksENG";
 import LinksPL from "./LinksPL";
 import Socials from "./Socials";
 import LangSwitch from "./LangSwitch";
 
 const Navbar = () => {
-  const { showLang, setShowLang, showNavbar, setShowNavbar, icons } =
-    useGlobalContext();
+  // globals
+  const { showLang, showNavbar, setShowNavbar, icons } = useGlobalContext();
   const { faBars } = icons;
+  // locals
+  const [linksHeight, setLinksHeight] = useState(0);
+  const [linksMargin, setLinksMargin] = useState(0);
+  const [navWidth, setNavWidth] = useState(window.innerWidth);
+  const navRef = useRef(null);
+  const linksRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const navWidth = navRef.current.getBoundingClientRect().width;
+      if (navWidth >= 768) {
+        setShowNavbar(false);
+      }
+      setNavWidth(navWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const expandNav = () => {
+    const linksCont = linksRef.current.getBoundingClientRect();
+    setLinksHeight(linksCont.x);
+    // setLinksMargin(linksCont.top * 2);
+    setShowNavbar(!showNavbar);
+  };
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navRef}>
       <Socials />
-      <div className={showNavbar ? "nav-buttons" : "nav-buttons collapse"}>
+      <div
+        className="nav-buttons"
+        style={
+          showNavbar
+            ? navWidth < 768
+              ? { height: `${linksHeight}px` }
+              : { height: `${linksHeight}px` }
+            : navWidth >= 768
+            ? { height: "4.75rem" }
+            : { height: "0" }
+        }
+        ref={linksRef}
+      >
         {showLang === "ENG" ? <LinksENG /> : <LinksPL />}
         <LangSwitch />
       </div>
       <div className="nav-toggler">
-        <button
-          className={showNavbar ? "deg90" : ""}
-          onClick={() => setShowNavbar(!showNavbar)}
-        >
+        <button className={showNavbar ? "deg90" : ""} onClick={expandNav}>
           {faBars}
         </button>
       </div>

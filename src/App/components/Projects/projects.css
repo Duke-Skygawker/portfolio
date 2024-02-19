@@ -6,14 +6,12 @@
   min-height: 100vh;
   display: flex;
   flex-flow: column;
-  /* justify-content: center; */
   align-items: center;
+  margin-top: 3em;
 }
 
 .projects-container {
-  /* border: 2px solid red; */
   margin: 5em auto 0 auto;
-  /* margin-top: 5em; */
   max-width: 90%;
   display: flex;
   gap: 2em;

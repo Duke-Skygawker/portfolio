@@ -4,6 +4,9 @@ import DynamicPortfolio from "../../../assets/images/PORTFOLIO PROJECTS/dynamic_
 import ShoppingCart from "../../../assets/images/PORTFOLIO PROJECTS/Shopping_cart_with_smartphones.png";
 import BackroadsApp from "../../../assets/images/PORTFOLIO PROJECTS/BACKROADSAPP.png";
 import ColorApp from "../../../assets/images/PORTFOLIO PROJECTS/COLOR_generator.png";
+import MemoryGame from "../../../assets/images/PORTFOLIO PROJECTS/memory-game.png";
+import SpaceInvaders from "../../../assets/images/PORTFOLIO PROJECTS/space-invaders.png";
+import Breakout from "../../../assets/images/PORTFOLIO PROJECTS/breakout.png";
 
 const projects = [
   {
@@ -48,6 +51,27 @@ const projects = [
     img: ColorApp,
     repo: "https://github.com/Duke-Skygawker/color-generator-react",
     url: "https://stirring-sunshine-e5f1cf.netlify.app",
+  },
+  {
+    name: "Memory Game",
+    namePL: "Memory Game",
+    img: MemoryGame,
+    repo: "https://github.com/Duke-Skygawker/memory-game",
+    url: "https://memory-game-d25e9f.netlify.app",
+  },
+  {
+    name: "Space Invaders",
+    namePL: "Space Invaders",
+    img: SpaceInvaders,
+    repo: "https://github.com/Duke-Skygawker/basic-space-invaders",
+    url: "https://space-invaders-68b600.netlify.app",
+  },
+  {
+    name: "Breakout",
+    namePL: "Breakout",
+    img: Breakout,
+    repo: "https://github.com/Duke-Skygawker/basic-pong-v-bricks",
+    url: "https://breakout-49bda2.netlify.app",
   },
 ];
 

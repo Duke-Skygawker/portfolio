@@ -24,8 +24,8 @@ const AboutPL = () => {
         ie .
       </article>
       <article>
-        Aktualnie poszukuję pracy, najwięcej doświadczenia mam w technoligiach
-        frontendowych. React, JS, CSS oraz HTML
+        Aktualnie poszukuję pracy, najwięcej doświadczenia mam w technologiach
+        frontendowych. React, JS, CSS oraz HTML.
       </article>
     </div>
   );

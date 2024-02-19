@@ -20,13 +20,13 @@
   gap: 2em;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 @media only screen and (max-width: 768px) {
   .about-container {
     gap: 0.7em;
     font-size: 1.6em;
-    margin-top: 1.5em;
+    margin-top: 1.4em;
   }
 }

@@ -7,6 +7,7 @@ import ColorApp from "../../../assets/images/PORTFOLIO PROJECTS/COLOR_generator.
 import MemoryGame from "../../../assets/images/PORTFOLIO PROJECTS/memory-game.png";
 import SpaceInvaders from "../../../assets/images/PORTFOLIO PROJECTS/space-invaders.png";
 import Breakout from "../../../assets/images/PORTFOLIO PROJECTS/breakout.png";
+import RestaurantMenu from "../../../assets/images/PORTFOLIO PROJECTS/restaurant-menu.png";
 
 const projects = [
   {
@@ -44,6 +45,13 @@ const projects = [
     img: BackroadsApp,
     repo: "https://github.com/Duke-Skygawker/backroads-app",
     url: "https://backroads-app-67f1fc.netlify.app",
+  },
+  {
+    name: "Restaurant Menu",
+    namePL: "Menu Restauracji",
+    img: RestaurantMenu,
+    repo: "https://github.com/Duke-Skygawker/restaurant-menu-react",
+    url: "https://restaurant-menu-662473.netlify.app",
   },
   {
     name: "Color shades generator",

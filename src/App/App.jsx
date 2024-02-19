@@ -3,6 +3,7 @@ import Certifications from "./components/Certifications/Certifications";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Projects />
       <Certifications />
+      <Footer />
     </div>
   );
 }

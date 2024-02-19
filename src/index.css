@@ -4,6 +4,7 @@
 @import "/src/App/components/About/about.css";
 @import "/src/App/components/Projects/projects.css";
 @import "/src/App/components/Certifications/certifications.css";
+@import "/src/App/components/Footer/footer.css";
 
 :root {
   box-sizing: border-box;

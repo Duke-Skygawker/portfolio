@@ -7,7 +7,7 @@ const HeroENG = () => {
       </article>
       <article className="hero-text2">
         My name is <span className="span1">Bartek</span>
-        <br /> and I'm a fledgling <br />
+        <br /> and I'm an aspiring <br />
         <span className="span2">Web Dev,</span> please feel free to look around!{" "}
       </article>
     </div>

@@ -6,3 +6,32 @@
   justify-content: center;
   align-items: center;
 }
+
+.text-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text1,
+.hero-text2 {
+  font-size: 2em;
+}
+.hero-text1 {
+  width: 50%;
+}
+.hero-text2 {
+  width: 80%;
+  /* margin-top: 5rem; */
+}
+.span1 {
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+.span2 {
+  font-size: 2.2em;
+  font-style: italic;
+}

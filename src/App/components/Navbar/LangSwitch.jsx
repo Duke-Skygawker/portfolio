@@ -4,11 +4,6 @@ const LangSwitch = () => {
   const { showLang, setShowLang } = useGlobalContext();
   return (
     <div className="lang-buttons">
-      <button onClick={() => setShowLang("PL")}>
-        <i className="country-flag">
-          {<PL title={showLang === "ENG" ? "Polish Flag" : "Flaga Polski"} />}
-        </i>
-      </button>
       <button onClick={() => setShowLang("ENG")}>
         <i className="country-flag">
           {
@@ -20,6 +15,11 @@ const LangSwitch = () => {
               }
             />
           }
+        </i>
+      </button>
+      <button onClick={() => setShowLang("PL")}>
+        <i className="country-flag">
+          {<PL title={showLang === "ENG" ? "Polish Flag" : "Flaga Polski"} />}
         </i>
       </button>
     </div>

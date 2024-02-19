@@ -29,6 +29,7 @@
 .nav-buttons {
   display: flex;
   display: contents;
+  transition: 0.3s ease-in-out all;
 }
 .lang-buttons {
   display: flex;
@@ -76,6 +77,8 @@
   }
   .nav-buttons {
     flex-direction: column;
+    height: 5rem;
+    border: 2px solid red;
     /* margin-left: 2em; */
   }
   .nav-links {

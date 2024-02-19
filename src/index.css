@@ -11,6 +11,8 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --transition: 0.3s ease-in-out all;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: rgb(36, 36, 36);
@@ -70,8 +72,13 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: var(--transition);
 }
+
+.deg90 {
+  transform: rotate(90deg);
+}
+
 button:hover {
   border-color: #646cff;
 }

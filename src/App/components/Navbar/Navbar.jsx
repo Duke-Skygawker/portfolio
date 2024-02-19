@@ -4,40 +4,18 @@ import { PL, GB } from "country-flag-icons/react/3x2";
 import LinksENG from "./LinksENG";
 import LinksPL from "./LinksPL";
 import Socials from "./Socials";
+import LangSwitch from "./LangSwitch";
 
 const Navbar = () => {
   const { showLang, setShowLang, showNavbar, setShowNavbar, icons } =
     useGlobalContext();
   const { faBars } = icons;
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Socials />
       <div className={showNavbar ? "nav-buttons" : "nav-buttons collapse"}>
         {showLang === "ENG" ? <LinksENG /> : <LinksPL />}
-        <div className="lang-buttons">
-          <button onClick={() => setShowLang("PL")}>
-            <i className="country-flag">
-              {
-                <PL
-                  title={showLang === "ENG" ? "Polish Flag" : "Flaga Polski"}
-                />
-              }
-            </i>
-          </button>
-          <button onClick={() => setShowLang("ENG")}>
-            <i className="country-flag">
-              {
-                <GB
-                  title={
-                    showLang === "ENG"
-                      ? "Great Britain Flag"
-                      : "Flaga Wielkiej Brytanii"
-                  }
-                />
-              }
-            </i>
-          </button>
-        </div>
+        <LangSwitch />
       </div>
       <div className="nav-toggler">
         <button
@@ -47,7 +25,7 @@ const Navbar = () => {
           {faBars}
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Navbar;

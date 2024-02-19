@@ -3,6 +3,7 @@ import { createContext } from "react";
 import { ImCross } from "react-icons/im";
 import { FaBars } from "react-icons/fa6";
 import { FaGithub, FaTwitter } from "react-icons/fa";
+import { PL, GB } from "country-flag-icons/react/3x2";
 
 export const GlobalContext = createContext();
 
@@ -16,6 +17,8 @@ const AppContext = ({ children }) => {
     faBars: <FaBars />,
     faGithub: <FaGithub />,
     faTwitter: <FaTwitter />,
+    FlagPL: <PL />,
+    FlagGB: <GB />,
   };
   return (
     <GlobalContext.Provider

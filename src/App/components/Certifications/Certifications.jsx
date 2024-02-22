@@ -9,21 +9,24 @@ const Certifications = () => {
   return (
     <div className="certifications" id="certifications">
       <h1>{showLang === "ENG" ? "Certifications" : "Certyfikaty"}</h1>
-      <div>
-        <div className="cert-grid">
+
+      <div className="cert-grid">
+        <div>
           <img
             src={cert1}
             alt="Responsive Web Design Certification from freeCodeCamp"
             className="cert-img"
           />
+        </div>
+        <div>
           <img
             src={cert2}
             alt="Responsive Web Design Certification from freeCodeCamp"
             className="cert-img"
           />
         </div>
-        {showLang === "ENG" ? <CertHeadEng /> : <CertHeadPL />}
       </div>
+      {showLang === "ENG" ? <CertHeadEng /> : <CertHeadPL />}
     </div>
   );
 };

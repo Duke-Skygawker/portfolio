@@ -3,7 +3,7 @@ const CertHeadEng = () => {
     <h4 className="cert-heading">
       Currently working on:{" "}
       <span className="cert-span">
-        Algorithms and Data Structures from{" "}
+        Front End Development Libraries from{" "}
         <a href="https://www.freecodecamp.org" target="_blank">
           freeCodeCamp
         </a>

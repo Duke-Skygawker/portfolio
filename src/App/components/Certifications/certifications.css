@@ -1,7 +1,7 @@
 .certifications {
   /* border: 2px solid red; */
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -13,6 +13,7 @@
   max-width: 80%;
   margin: 2em auto;
   display: flex;
+  flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2em;
@@ -20,9 +21,10 @@
 
 .cert-img {
   max-width: 30em;
+  display: block;
 }
 .cert-heading {
-  margin-top: 3em;
+  margin: 1em auto 1em auto;
 }
 .cert-span {
   color: aquamarine;

@@ -58,3 +58,8 @@
     animation: certZoomSmall 1s ease 0s 1 normal forwards;
   }
 }
+@media only screen and (max-width: 580px) {
+  .cert-img {
+    max-width: 400px;
+  }
+}

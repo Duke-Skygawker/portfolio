@@ -45,7 +45,7 @@ const Navbar = () => {
         style={
           showNavbar
             ? navWidth < 768
-              ? { height: `${linksHeight}px` }
+              ? { height: `${linksHeight + 100}px` }
               : { height: `${linksHeight}px` }
             : navWidth >= 768
             ? { height: "4.75rem" }

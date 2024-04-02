@@ -10,3 +10,9 @@
   padding: 0 0.3rem 0 0.3rem;
   color: rgb(0, 151, 184);
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 1em 1em 0.7em 2em;
+  }
+}

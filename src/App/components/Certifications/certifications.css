@@ -58,8 +58,17 @@
     animation: certZoomSmall 1s ease 0s 1 normal forwards;
   }
 }
+@media only screen and (max-width: 768px) {
+  .cert-img:hover {
+    animation: none;
+  }
+}
 @media only screen and (max-width: 580px) {
   .cert-img {
     max-width: 400px;
+  }
+  .cert-heading {
+    margin: 2em;
+    margin-bottom: 1em;
   }
 }

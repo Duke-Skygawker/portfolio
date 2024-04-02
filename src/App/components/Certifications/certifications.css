@@ -65,7 +65,7 @@
 }
 @media only screen and (max-width: 580px) {
   .cert-img {
-    max-width: 400px;
+    max-width: 300px;
   }
   .cert-heading {
     margin: 2em;

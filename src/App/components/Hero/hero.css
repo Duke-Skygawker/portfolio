@@ -55,12 +55,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -2em;
+    margin-left: -5em;
   }
   .hero-text1,
   .hero-text2 {
     width: 50%;
     margin: 0;
+    font-size: 1.4em;
   }
 
   .hero-text2 {

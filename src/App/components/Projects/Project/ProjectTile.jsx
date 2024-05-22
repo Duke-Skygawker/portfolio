@@ -1,6 +1,6 @@
 import { useGlobalContext } from "../../../../context/Context";
 
-const Project = ({ item }) => {
+const ProjectTile = ({ item }) => {
   const { showLang } = useGlobalContext();
   const { name, namePL, img, repo, url } = item;
   return (
@@ -16,4 +16,4 @@ const Project = ({ item }) => {
     </div>
   );
 };
-export default Project;
+export default ProjectTile;

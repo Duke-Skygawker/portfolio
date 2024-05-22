@@ -10,10 +10,24 @@ const Projects = () => {
       <div className="projects-header">
         <h1>{showLang === "ENG" ? "Projects" : "Projekty"}</h1>
         <div className="projects-layout-btns">
-          <button onClick={() => setProjectsLayout("Tile")}>
+          <button
+            title={
+              showLang === "ENG"
+                ? "Tile layout for projects"
+                : "Układ projektów w formie Kafelków"
+            }
+            onClick={() => setProjectsLayout("Tile")}
+          >
             <i>{icons.faTable}</i>
           </button>
-          <button onClick={() => setProjectsLayout("List")}>
+          <button
+            title={
+              showLang === "ENG"
+                ? "List layout for projects"
+                : "Układ projektów w formie listy"
+            }
+            onClick={() => setProjectsLayout("List")}
+          >
             <i>{icons.faList}</i>
           </button>
         </div>

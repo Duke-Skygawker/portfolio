@@ -32,8 +32,13 @@ const Navbar = () => {
 
   const expandNav = () => {
     const linksCont = linksRef.current.getBoundingClientRect();
-    setLinksHeight(linksCont.x);
-    // setLinksMargin(linksCont.top * 2);
+    if (linksCont.x < 420) {
+      setLinksHeight(linksCont.x + 150);
+    } else if (linksCont.x > 420 && linksCont.x < 744) {
+      setLinksHeight(linksCont.x - 100);
+    } else {
+      setLinksHeight(linksCont.x);
+    }
     setShowNavbar(!showNavbar);
   };
 
@@ -45,9 +50,9 @@ const Navbar = () => {
         style={
           showNavbar
             ? navWidth < 768
-              ? { height: `${linksHeight + 150}px` }
-              : { height: `${linksHeight}px` }
-            : navWidth >= 768
+              ? { height: `${linksHeight}px` }
+              : { height: `${linksHeight + 50}px` }
+            : navWidth >= 751
             ? { height: "4.75rem" }
             : { height: "0" }
         }

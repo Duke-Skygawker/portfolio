@@ -45,10 +45,13 @@ a {
   font-weight: 500;
   color: #ddd;
   text-decoration: inherit;
+  border-radius: 8px;
+  border: 1px solid transparent;
 }
 a:hover {
-  color: #434343;
-  border-top: solid 2px #434343;
+  color: #8a8a8a;
+  border-color: #646cff;
+  /* border-top: solid 2px #434343; */
 }
 
 body {

@@ -2,7 +2,6 @@
 @import "./Project/projectLi.css";
 
 .projects {
-  /* border: 2px solid red; */
   min-width: 100%;
   min-height: 100vh;
   display: flex;
@@ -11,7 +10,7 @@
   margin-top: 3em;
 }
 
-.projects-container {
+.projects-tile-container {
   margin: 5em auto 0 auto;
   max-width: 90%;
   display: flex;

@@ -18,7 +18,7 @@ export const useGlobalContext = () => useContext(GlobalContext);
 const AppContext = ({ children }) => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [showLang, setShowLang] = useState("ENG");
-  const [projectsLayout, setProjectsLayout] = useState("ENG");
+  const [projectsLayout, setProjectsLayout] = useState("Tile");
   const icons = {
     closeCross: <ImCross />,
     faBars: <FaBars />,

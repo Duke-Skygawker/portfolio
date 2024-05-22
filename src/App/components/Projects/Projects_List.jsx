@@ -1,4 +1,8 @@
 const ProjectsList = () => {
-  return <div>Projects_List</div>;
+  return (
+    <div>
+      <h1>LIST LAYOUT IS A WORK IN PROGRESS</h1>
+    </div>
+  );
 };
 export default ProjectsList;

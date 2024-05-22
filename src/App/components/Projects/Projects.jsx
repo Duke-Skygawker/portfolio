@@ -21,6 +21,7 @@ const Projects = () => {
             <i>{icons.faTable}</i>
           </button>
           <button
+            disabled
             title={
               showLang === "ENG"
                 ? "List layout for projects"

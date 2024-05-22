@@ -10,6 +10,22 @@
   margin-top: 3em;
 }
 
+.projects-header {
+  display: flex;
+  flex-flow: row;
+  gap: 1.3rem;
+}
+.projects-layout-btns {
+  display: flex;
+  flex-flow: row;
+  gap: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.projects-layout-btns button {
+  background-color: transparent;
+}
+
 .projects-tile-container {
   margin: 5em auto 0 auto;
   max-width: 90%;
